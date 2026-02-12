@@ -1,6 +1,6 @@
 cask "subline" do
-  version "0.3.2"
-  sha256 "b933901f8e8e94a518c91163304af9a92556caa3a783ce32f872a96d6b9f44b4"
+  version "0.3.3"
+  sha256 "ad3bd3ad1e051c66e3d53061bd00cc4774762df0f025ab9bfe2923184dc62874"
 
   url "https://github.com/fenelon/subline-go/releases/download/#{version}/subline-macos-app.zip"
   name "Subline"
