@@ -1,18 +1,18 @@
 class Subline < Formula
-  desc "Generate subtitles from video and audio files using Whisper AI"
+  desc "AI subtitles and transcripts made easy"
   homepage "https://github.com/fenelon/subline-go"
-  version "0.2.1"
+  version "0.3.0"
   license :cannot_represent
 
   on_macos do
     on_arm do
       url "https://github.com/fenelon/subline-go/releases/download/#{version}/subline-darwin-arm64.tar.gz"
-      sha256 "486f0cd2ad1aa72a0ddc1e431c6f65a569afb668794b2d22e625964f1c07ffcf"
+      sha256 "e5a89edf1b18107a5a72e723f2b874ee0e72a4b594a5146b16c34040b8e67e99"
     end
 
     on_intel do
       url "https://github.com/fenelon/subline-go/releases/download/#{version}/subline-darwin-amd64.tar.gz"
-      sha256 "66a9c002727271a9443bf9fdbe16a61daefdbc5c07e89b1fccc453ec8fc6f969"
+      sha256 "de3b48bb3ae871a70c509a7b2b9b473f7139a8ccb6b0a1beb416fdb663e9ff43"
     end
   end
 
