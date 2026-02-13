@@ -7,8 +7,6 @@ cask "subline" do
   desc "AI subtitles and transcripts made easy"
   homepage "https://github.com/fenelon/subline-releases"
 
-  conflicts_with formula: "fenelon/tap/subline"
-
   app "Subline.app"
   binary "#{appdir}/Subline.app/Contents/Resources/subline"
 end
