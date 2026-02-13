@@ -19,6 +19,13 @@ class Subline < Formula
   def install
     libexec.install "subline"
     libexec.install Dir["libonnxruntime*"]
+    # Re-sign binary and dylibs with adhoc so Team IDs match.
+    # Homebrew re-signs dylibs on extraction, stripping the Developer ID,
+    # which causes a Team ID mismatch that prevents loading.
+    system "codesign", "--sign", "-", "--force", libexec/"subline"
+    Dir[libexec/"libonnxruntime*.dylib"].each do |f|
+      system "codesign", "--sign", "-", "--force", f unless File.symlink?(f)
+    end
     bin.install_symlink libexec/"subline"
   end
 
