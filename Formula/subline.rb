@@ -1,18 +1,18 @@
 class Subline < Formula
   desc "AI subtitles and transcripts made easy"
   homepage "https://github.com/fenelon/subline-releases"
-  version "0.4.3"
+  version "0.4.4"
   license :cannot_represent
 
   on_macos do
     on_arm do
       url "https://github.com/fenelon/subline-releases/releases/download/#{version}/subline-darwin-arm64.zip"
-      sha256 "2a6a2cf062acf2fadb4b13cb9e44fe9646ec880d56a7d87bd32cc28cee1afe77"
+      sha256 "3b512668484ca054276659a56480184bd6f7f7178d627ddf6837d4c0720a3aa8"
     end
 
     on_intel do
       url "https://github.com/fenelon/subline-releases/releases/download/#{version}/subline-darwin-amd64.zip"
-      sha256 "67d71e020d0d2dd016389f35d9c3f0a2ebba396a12c3077ee7d8af690b7aa52c"
+      sha256 "1a830791b9ea1754cbf952d218eec61b2f9e9e8e43d48f2f42ec1f50fc52ba90"
     end
   end
 
