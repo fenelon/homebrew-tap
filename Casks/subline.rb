@@ -1,6 +1,6 @@
 cask "subline" do
-  version "0.4.9"
-  sha256 "12800e48d9b7e2eaed8948349e6319851a4c94326f99cdc7085fea6efd25e9ee"
+  version "0.4.10"
+  sha256 "be906c644e956949f1cee20b0c310574117f2780a12868baa139a75186c43264"
 
   url "https://github.com/fenelon/subline-releases/releases/download/#{version}/Subline.dmg"
   name "Subline"
